@@ -1,1 +1,45 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: #0e7e12;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 400px;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.top-suit,
+.bottom-suit {
+  font-size: 50px;
+  margin: 10px;
+}
+.number {
+  font-size: 100px;
+}
+.top-suit {
+  align-self: flex-start;
+}
+.bottom-suit {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
